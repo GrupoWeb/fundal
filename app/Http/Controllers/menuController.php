@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\estudiante;
 use App\Models\jornada;
+use App\Models\padres;
 
 class menuController extends Controller
 {
@@ -16,6 +17,14 @@ class menuController extends Controller
         return view('menu.jornada');
     }
 
+    public function showCpadres(){
+        return view('menu.padres');
+    }
+
+    public function showimpartidas(){
+        return view('menu.impartidas');
+    }
+
     public function getEstudiante(){
         $data = estudiante::select('id_lis_estud','nombre_partida')->where('activo','=','A')->get();
         return response()->json($data, 200);
@@ -23,6 +32,11 @@ class menuController extends Controller
 
     public function getjornada(){
         $data = jornada::select('id_jornadas','tipo_jorna')->where('activo','=','A')->get();
+        return response()->json($data, 200);
+    }
+
+    public function getPadres(){
+        $data = padres::select('id_cap_padres','tema')->where('activo','=','A')->get();
         return response()->json($data, 200);
     }
 
@@ -86,6 +100,38 @@ class menuController extends Controller
        return response()->json($data->save(), 200);
     }
 
+    public function addPadres(Request $request){
+        $data = new padres;
+
+        // $data->id_lis_estud = $request->ids;
+        $data->fecha = $request->fechaa;
+        $data->tema = $request->temaa;
+        $data->logros_resultados = $request->logrosRa;
+        $data->tiempo = $request->tiempoa;
+        $data->institucion_representan = $request->institucionRa;
+        $data->programa_pertenecen = $request->programaPa;
+        $data->pais = $request->paisa;
+        $data->departamento = $request->departamentoa;
+        $data->municipio = $request->municipioa;
+        $data->aldea = $request->aldeaa;
+        $data->cantidad_padres = $request->cantidadPa;
+        $data->padres = $request->padresa;
+        $data->madres = $request->madresa;
+        $data->cantidad_miembros = $request->cantidadMa;
+        $data->hombres = $request->hombresa;
+        $data->mujeres = $request->mujeresa;
+        $data->total_cantidad = $request->totalCa;
+        $data->grupo_etnico = $request->grupoEa;
+        $data->estudiantes_directos = $request->estudianteDa;
+        $data->estudiantes_indirectos = $request->estudianteIa;
+        $data->nombre_facilitador = $request->nombreFaa;
+        $data->tipo_actividad = $request->tipoAca;
+        $data->tipo = $request->tipos;
+        $data->activo = 'A';
+        
+       return response()->json($data->save(), 200);
+    }
+
     public function deleteByIdCategory(Request $request){
         $deleteById = estudiante::where('id_lis_estud', $request->id)->update(['activo' => 'I']);
         return $deleteById;
@@ -93,6 +139,11 @@ class menuController extends Controller
 
     public function deleteByJornada(Request $request){
         $deleteById = jornada::where('id_jornadas', $request->id)->update(['activo' => 'I']);
+        return $deleteById;
+    }
+
+    public function deleteByPadres(Request $request){
+        $deleteById = padres::where('id_cap_padres', $request->id)->update(['activo' => 'I']);
         return $deleteById;
     }
 }

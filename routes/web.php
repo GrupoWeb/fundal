@@ -30,6 +30,18 @@ Route::group(['middleware' => 'cors'], function(){
 		Route::put('updatejornada','menuController@updatejornada');
 		Route::put('deletejornada','menuController@deleteByJornada');
 
+		Route::get('Cpadres','menuController@showCpadres');
+		Route::get('getPadres','menuController@getPadres');
+		Route::post('addPadres','menuController@addPadres');
+		Route::put('updatePadres','menuController@updatePadres');
+		Route::put('deletePadres','menuController@deleteByPadres');
+
+		Route::get('impartidas','menuController@showimpartidas');
+		Route::get('getPadres','menuController@getPadres');
+		Route::post('addPadres','menuController@addPadres');
+		Route::put('updatePadres','menuController@updatePadres');
+		Route::put('deletePadres','menuController@deleteByPadres');
+
 
 		// Section CoreUI elements
 		// Route::view('/sample/dashboard','samples.dashboard');

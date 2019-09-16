@@ -16,14 +16,14 @@
         <a class="nav-link" href="jornada"><i class="icon-calculator"></i> Jornada</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="icon-calculator"></i> Capacitación Padres</a>
+        <a class="nav-link" href="Cpadres"><i class="icon-calculator"></i> Capacitación Padress</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"><i class="icon-calculator"></i> Capacitación Impartida</a>
+      {{-- <li class="nav-item">
+        <a class="nav-link" href="impartidas"><i class="icon-calculator"></i> Impartida</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#"><i class="icon-calculator"></i> Capacitación Recibida</a>
-      </li>
+      </li> --}}
     </ul>
   </nav>
   <button class="sidebar-minimizer brand-minimizer" type="button"></button>
