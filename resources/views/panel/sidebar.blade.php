@@ -10,7 +10,7 @@
       </li>
       {{-- <a class="nav-link" href="/sample/dashboard"><i class="icon-calculator"></i> Samples</a> --}}
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="icon-calculator"></i> Estudiantes</a>
+        <a class="nav-link" href="estudiante"><i class="icon-calculator"></i> Estudiantes</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#"><i class="icon-calculator"></i> Jornada</a>
