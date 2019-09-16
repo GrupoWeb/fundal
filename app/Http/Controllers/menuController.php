@@ -47,7 +47,7 @@ class menuController extends Controller
         $data->consta_egreso = $request->constanciaegresos;
         $data->tipo = $request->tipos;
 
-        dd($data);
+        
        return response()->json($data->save(), 200);
     }
 }

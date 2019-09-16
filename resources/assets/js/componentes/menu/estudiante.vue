@@ -264,13 +264,13 @@ export default {
             trigger: "blur"
           }
         ],
-        fechanac: [
-          {
-            required: true,
-            message: "Ingrese una fecha",
-            trigger: "blur"
-          }
-        ],
+        // fechanac: [
+        //   {
+        //     required: true,
+        //     message: "Ingrese una fecha",
+        //     trigger: "blur"
+        //   }
+        // ],
         edad: [
           {
             required: true,
