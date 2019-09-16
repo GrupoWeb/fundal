@@ -75209,7 +75209,7 @@ exports = module.exports = __webpack_require__(81)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -75760,6 +75760,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -75769,7 +75789,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       currentPage: 1,
       pagesize: 10,
       formInline: {
-        id: "",
+        // id: "",
         codigo: "",
         name: "",
         genero: "",
@@ -75798,7 +75818,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         tipo: ""
 
       },
-      ids: "",
+      //   ids: "",
       codigos: "",
       names: "",
       generos: "",
@@ -75833,11 +75853,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
           message: "Ingrese un Nombre de Categoria",
           trigger: "blur"
         }],
-        id: [{
-          required: true,
-          message: "Ingrese un id",
-          trigger: "blur"
-        }],
+        // id: [
+        //   {
+        //     required: true,
+        //     message: "Ingrese un id",
+        //     trigger: "blur"
+        //   }
+        // ],
         codigo: [{
           required: true,
           message: "Ingrese un codigo",
@@ -75992,7 +76014,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
           _this2.fullscreenLoading = true;
           var url = "/addEstudiante";
           axios.post(url, {
-            ids: _this2.formInline.id,
+            //   ids: this.formInline.id,
             codigos: _this2.formInline.codigo,
             names: _this2.formInline.name,
             generos: _this2.formInline.genero,
@@ -76157,23 +76179,6 @@ var render = function() {
               [
                 _c(
                   "el-form-item",
-                  { attrs: { label: "ID: ", prop: "id" } },
-                  [
-                    _c("el-input", {
-                      model: {
-                        value: _vm.formInline.id,
-                        callback: function($$v) {
-                          _vm.$set(_vm.formInline, "id", $$v)
-                        },
-                        expression: "formInline.id"
-                      }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "el-form-item",
                   { attrs: { label: "CODIGO: ", prop: "codigo" } },
                   [
                     _c("el-input", {
@@ -76227,7 +76232,8 @@ var render = function() {
                   "el-form-item",
                   { attrs: { label: "FECHA NACIMIENTO: ", prop: "fechanac" } },
                   [
-                    _c("el-input", {
+                    _c("el-date-picker", {
+                      attrs: { type: "date", placeholder: "Pick a day" },
                       model: {
                         value: _vm.formInline.fechanac,
                         callback: function($$v) {
@@ -76416,7 +76422,8 @@ var render = function() {
                   "el-form-item",
                   { attrs: { label: "FECHA EVALUACIÓN: ", prop: "fechaval" } },
                   [
-                    _c("el-input", {
+                    _c("el-date-picker", {
+                      attrs: { type: "date", placeholder: "Pick a day" },
                       model: {
                         value: _vm.formInline.fechaval,
                         callback: function($$v) {
@@ -76433,7 +76440,8 @@ var render = function() {
                   "el-form-item",
                   { attrs: { label: "FECHA INGRESO: ", prop: "fechaing" } },
                   [
-                    _c("el-input", {
+                    _c("el-date-picker", {
+                      attrs: { type: "date", placeholder: "Pick a day" },
                       model: {
                         value: _vm.formInline.fechaing,
                         callback: function($$v) {
@@ -76554,7 +76562,8 @@ var render = function() {
                   "el-form-item",
                   { attrs: { label: "FECHA EGRESO: ", prop: "fingreso" } },
                   [
-                    _c("el-input", {
+                    _c("el-date-picker", {
+                      attrs: { type: "date", placeholder: "Pick a day" },
                       model: {
                         value: _vm.formInline.fingreso,
                         callback: function($$v) {

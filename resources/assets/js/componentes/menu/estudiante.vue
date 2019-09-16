@@ -14,9 +14,9 @@
           
           :rules="rules"
         >
-          <el-form-item label="ID: " prop="id">
+          <!-- <el-form-item label="ID: " prop="id">
             <el-input v-model="formInline.id"></el-input>
-          </el-form-item>
+          </el-form-item> -->
 
           <el-form-item label="CODIGO: " prop="codigo">
             <el-input v-model="formInline.codigo"></el-input>
@@ -31,7 +31,12 @@
           </el-form-item>
 
           <el-form-item label="FECHA NACIMIENTO: " prop="fechanac">
-            <el-input v-model="formInline.fechanac"></el-input>
+            <!-- <el-input v-model="formInline.fechanac"></el-input> -->
+            <el-date-picker
+                v-model="formInline.fechanac"
+                type="date"
+                placeholder="Pick a day">
+                </el-date-picker>
           </el-form-item>
 
           <el-form-item label="EDAD: " prop="edad">
@@ -73,11 +78,21 @@
           </el-form-item>
 
           <el-form-item label="FECHA EVALUACIÓN: " prop="fechaval">
-            <el-input v-model="formInline.fechaval"></el-input>
+            <!-- <el-input v-model="formInline.fechaval"></el-input> -->
+            <el-date-picker
+                v-model="formInline.fechaval"
+                type="date"
+                placeholder="Pick a day">
+                </el-date-picker>
           </el-form-item>
 
           <el-form-item label="FECHA INGRESO: " prop="fechaing">
-            <el-input v-model="formInline.fechaing"></el-input>
+            <!-- <el-input v-model="formInline.fechaing"></el-input> -->
+            <el-date-picker
+                v-model="formInline.fechaing"
+                type="date"
+                placeholder="Pick a day">
+                </el-date-picker>
           </el-form-item>
 
           <el-form-item label="DOCENTE: " prop="docente">
@@ -103,7 +118,12 @@
             <el-input v-model="formInline.inclusion"></el-input>
           </el-form-item>
           <el-form-item label="FECHA EGRESO: " prop="fingreso">
-            <el-input v-model="formInline.fingreso"></el-input>
+            <!-- <el-input v-model="formInline.fingreso"></el-input> -->
+            <el-date-picker
+                v-model="formInline.fingreso"
+                type="date"
+                placeholder="Pick a day">
+                </el-date-picker>
           </el-form-item>
 
           <el-form-item label="MOTIVO EGRESO: " prop="motivoegreso">
@@ -177,7 +197,7 @@ export default {
       currentPage: 1,
       pagesize: 10,
       formInline: {
-        id: "",
+        // id: "",
         codigo:"",
         name:"",
         genero:"",
@@ -206,7 +226,7 @@ export default {
         tipo:""
 
       },
-      ids: "",
+    //   ids: "",
       codigos: "",
       names: "",
       generos: "",
@@ -243,13 +263,13 @@ export default {
             trigger: "blur"
           }
         ],
-        id: [
-          {
-            required: true,
-            message: "Ingrese un id",
-            trigger: "blur"
-          }
-        ],
+        // id: [
+        //   {
+        //     required: true,
+        //     message: "Ingrese un id",
+        //     trigger: "blur"
+        //   }
+        // ],
         codigo: [
           {
             required: true,
@@ -448,7 +468,7 @@ export default {
           var url = "/addEstudiante";
           axios
             .post(url, {
-              ids: this.formInline.id,
+            //   ids: this.formInline.id,
               codigos: this.formInline.codigo,
               names: this.formInline.name,
               generos: this.formInline.genero,

@@ -19,7 +19,7 @@ class menuController extends Controller
     public function addEstudiante(Request $request){
         $data = new estudiante;
 
-        $data->id_lis_estud = $request->ids;
+        // $data->id_lis_estud = $request->ids;
         $data->codigo = $request->codigos;
         $data->nombre_partida = $request->names;
         $data->genero = $request->generos;
