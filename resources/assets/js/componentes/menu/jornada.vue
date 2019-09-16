@@ -2,7 +2,7 @@
   <div>
     <el-card class="box-card">
       <div slot="header" class="clearfix">
-        <span>Estudiantes</span>
+        <span>Jornada</span>
         
       </div>
       <div >
@@ -18,44 +18,12 @@
             <el-input v-model="formInline.id"></el-input>
           </el-form-item> -->
 
-          <el-form-item label="CODIGO: " prop="codigo">
-            <el-input v-model="formInline.codigo"></el-input>
+          <el-form-item label="TIPO JORNADA: " prop="tipo_jorna">
+            <el-input v-model="formInline.tjornada"></el-input>
           </el-form-item>
 
-          <el-form-item label="NOMBRE PARTIDA: " prop="name">
-            <el-input v-model="formInline.name"></el-input>
-          </el-form-item>
-
-          <el-form-item label="GENERO: " prop="genero">
-            <el-input v-model="formInline.genero"></el-input>
-          </el-form-item>
-
-          <el-form-item label="FECHA NACIMIENTO: " prop="fechanac">
-            <!-- <el-input v-model="formInline.fechanac"></el-input> -->
-            <el-date-picker
-                v-model="formInline.fechanac"
-                type="date"
-                placeholder="Pick a day">
-                </el-date-picker>
-          </el-form-item>
-
-          <el-form-item label="EDAD: " prop="edad">
-            <el-input v-model="formInline.edad"></el-input>
-          </el-form-item>
-
-          <el-form-item label="DIAGNOSTICO: " prop="diagnostico">
-            <el-input v-model="formInline.diagnostico"></el-input>
-          </el-form-item>
-
-          <el-form-item label="CLASIFICACIÓN: " prop="clasificacion">
-            <el-input v-model="formInline.clasificacion"></el-input>
-          </el-form-item>
-
-          <el-form-item label="REFERIDO: " prop="referido">
-            <el-input v-model="formInline.referido"></el-input>
-          </el-form-item>
-          <el-form-item label="CONSTANCIA: " prop="constancia">
-            <el-input v-model="formInline.constancia"></el-input>
+          <el-form-item label="insti_propo: " prop="insti_propo">
+            <el-input v-model="formInline.insti_propo"></el-input>
           </el-form-item>
 
           <el-form-item label="DEPARTAMENTO: " prop="departamento">
@@ -64,76 +32,61 @@
 
           <el-form-item label="MUNICIPIO: " prop="municipio">
             <el-input v-model="formInline.municipio"></el-input>
+            <!-- <el-date-picker
+                v-model="formInline.fechanac"
+                type="date"
+                placeholder="Pick a day">
+                </el-date-picker> -->
           </el-form-item>
 
           <el-form-item label="ALDEA: " prop="aldea">
             <el-input v-model="formInline.aldea"></el-input>
           </el-form-item>
 
-          <el-form-item label="TELEFONO: " prop="telefono">
-            <el-input v-model="formInline.telefono"></el-input>
-          </el-form-item>
-          <el-form-item label="GRUPO ETNICO: " prop="etnia">
-            <el-input v-model="formInline.etnia"></el-input>
+          <el-form-item label="TOTAL REFERIDO: " prop="Treferido">
+            <el-input v-model="formInline.Treferido"></el-input>
           </el-form-item>
 
-          <el-form-item label="FECHA EVALUACIÓN: " prop="fechaval">
-            <!-- <el-input v-model="formInline.fechaval"></el-input> -->
-            <el-date-picker
+          <el-form-item label="TOTAL ATENDIDO: " prop="Tatendido">
+            <el-input v-model="formInline.Tatendido"></el-input>
+          </el-form-item>
+
+          <el-form-item label="MUJER: " prop="mujer">
+            <el-input v-model="formInline.mujer"></el-input>
+          </el-form-item>
+          <el-form-item label="HOMBRE: " prop="hombre">
+            <el-input v-model="formInline.hombre"></el-input>
+          </el-form-item>
+
+          <el-form-item label="LADINO: " prop="ladino">
+            <el-input v-model="formInline.ladino"></el-input>
+          </el-form-item>
+
+          <el-form-item label="MAYA: " prop="maya">
+            <el-input v-model="formInline.maya"></el-input>
+          </el-form-item>
+
+          <el-form-item label="XINKA: " prop="xinka">
+            <el-input v-model="formInline.xinka"></el-input>
+          </el-form-item>
+
+          <el-form-item label="GARIGUNA: " prop="gariguna">
+            <el-input v-model="formInline.gariguna"></el-input>
+          </el-form-item>
+          <el-form-item label="MAYOR: " prop="mayor">
+            <el-input v-model="formInline.mayor"></el-input>
+          </el-form-item>
+
+          <el-form-item label="MENOR: " prop="menor">
+            <el-input v-model="formInline.menor"></el-input>
+            <!-- <el-date-picker
                 v-model="formInline.fechaval"
                 type="date"
                 placeholder="Pick a day">
-                </el-date-picker>
+                </el-date-picker> -->
           </el-form-item>
 
-          <el-form-item label="FECHA INGRESO: " prop="fechaing">
-            <!-- <el-input v-model="formInline.fechaing"></el-input> -->
-            <el-date-picker
-                v-model="formInline.fechaing"
-                type="date"
-                placeholder="Pick a day">
-                </el-date-picker>
-          </el-form-item>
-
-          <el-form-item label="DOCENTE: " prop="docente">
-            <el-input v-model="formInline.docente"></el-input>
-          </el-form-item>
-
-          <el-form-item label="ETAPA MINEDUC: " prop="etapa">
-            <el-input v-model="formInline.etapa"></el-input>
-          </el-form-item>
-          <el-form-item label="CODIGO MINEDUC: " prop="codigoMineduc">
-            <el-input v-model="formInline.codigoMineduc"></el-input>
-          </el-form-item>
-
-          <el-form-item label="JORNADA: " prop="jornada">
-            <el-input v-model="formInline.jornada"></el-input>
-          </el-form-item>
-
-          <el-form-item label="ETAPA FUNDAL: " prop="etapafundal">
-            <el-input v-model="formInline.etapafundal"></el-input>
-          </el-form-item>
-
-          <el-form-item label="INCLUSIÓN: " prop="inclusion">
-            <el-input v-model="formInline.inclusion"></el-input>
-          </el-form-item>
-          <el-form-item label="FECHA EGRESO: " prop="fingreso">
-            <!-- <el-input v-model="formInline.fingreso"></el-input> -->
-            <el-date-picker
-                v-model="formInline.fingreso"
-                type="date"
-                placeholder="Pick a day">
-                </el-date-picker>
-          </el-form-item>
-
-          <el-form-item label="MOTIVO EGRESO: " prop="motivoegreso">
-            <el-input v-model="formInline.motivoegreso"></el-input>
-          </el-form-item>
-
-          <el-form-item label="CONSTANCIA EGRESO: " prop="constanciaegreso">
-            <el-input v-model="formInline.constanciaegreso"></el-input>
-          </el-form-item>
-
+          
           <el-form-item label="TIPO: " prop="tipo">
             <el-select v-model="formInline.tipo" placeholder="Activity zone" >
                 <el-option label="Distancia GT" value="Distancia_GT"></el-option>
@@ -159,18 +112,18 @@
       style="width: 100%"
       border
     >
-      <el-table-column prop="id_lis_estud" label="#" width="50"></el-table-column>
-      <el-table-column prop="nombre_partida" label="Nombre"></el-table-column>
+      <el-table-column prop="id_jornadas" label="#" width="50"></el-table-column>
+      <el-table-column prop="tipo_jorna" label="Nombre"></el-table-column>
       <el-table-column label="Operaciones" width="200">
         <template slot="header" slot-scope="scope">
           <el-input v-model="search" size="mini" placeholder="Buscar" />
         </template>
         <template slot-scope="scope">
-          <el-button size="mini" @click="handleEdit(scope.row.id_lis_estud)">Editar</el-button>
+          <el-button size="mini" @click="handleEdit(scope.row.id_jornadas)">Editar</el-button>
           <el-button
             size="mini"
             type="danger"
-            @click="handleDelete(scope.row.id_lis_estud)"
+            @click="handleDelete(scope.row.id_jornadas)"
           >Eliminar</el-button>
         </template>
       </el-table-column>
@@ -198,68 +151,48 @@ export default {
       pagesize: 10,
       formInline: {
         // id: "",
-        codigo:"",
-        name:"",
-        genero:"",
-        fechanac:"",
-        edad:"",
-        diagnostico:"",
-        clasificacion:"",
-        referido:"",
-        constancia:"",
+        tjornada:"",
+        insti_propo:"",
         departamento:"",
         municipio:"",
         aldea:"",
-        telefono:"",
-        etnia:"",
-        fechaval:"",
-        fechaing:"",
-        docente:"",
-        etapa:"",
-        codigoMineduc:"",
-        jornada:"",
-        etapafundal:"",
-        inclusion:"",
-        fingreso:"",
-        motivoegreso:"",
-        constanciaegreso:"",
+        Treferido:"",
+        Tatendido:"",
+        mujer:"",
+        hombre:"",
+        ladino:"",
+        maya:"",
+        xinka:"",
+        gariguna:"",
+        mayor:"",
+        menor:"",
         tipo:""
 
       },
     //   ids: "",
-      codigos: "",
-      names: "",
-      generos: "",
-      fechasnac: "",
-      edads: "",
-      diagnosticos: "",
-      clasificaciones: "",
-      referidos: "",
-      constancias: "",
-      departamentos: "",
-      municipios: "",
-      aldeas: "",
-      telefonos: "",
-      etnias: "",
-      fechasval: "",
-      fechasing: "",
-      docentes: "",
-      etapas: "",
-      codigosmineduc: "",
-      jornadas: "",
-      etapasfundal: "",
-      inclusiones: "",
-      fingresos: "",
-      motivoingresos: "",
-      constanciaegresos: "",
-      tipos: "",
+        tjornadas:"",
+        insti_propos:"",
+        departamentos:"",
+        municipios:"",
+        aldeas:"",
+        Treferidos:"",
+        Tatendidos:"",
+        mujers:"",
+        hombres:"",
+        ladinos:"",
+        mayas:"",
+        xinkas:"",
+        garigunas:"",
+        mayors:"",
+        menors:"",
+        tipos:"",
       fullscreenLoading: false,
       loading: false,
       rules: {
-        name: [
+        tjornada: [
           {
             required: true,
-            message: "Ingrese un Nombre de Categoria",
+            message: "Ingrese un valor",
             trigger: "blur"
           }
         ],
@@ -270,17 +203,17 @@ export default {
         //     trigger: "blur"
         //   }
         // ],
-        codigo: [
+        insti_propo: [
           {
             required: true,
-            message: "Ingrese un codigo",
+            message: "Ingrese un valor",
             trigger: "blur"
           }
         ],
-        genero: [
+        departamento: [
           {
             required: true,
-            message: "Ingrese un genero",
+            message: "Ingrese un valor",
             trigger: "blur"
           }
         ],
@@ -291,160 +224,105 @@ export default {
         //     trigger: "blur"
         //   }
         // ],
-        edad: [
-          {
-            required: true,
-            message: "Ingrese una edad",
-            trigger: "blur"
-          }
-        ],
-        diagnostico: [
-          {
-            required: true,
-            message: "Ingrese un diagnostico",
-            trigger: "blur"
-          }
-        ],
-        clasificacion: [
-          {
-            required: true,
-            message: "Ingrese una clasificacion",
-            trigger: "blur"
-          }
-        ],
-        referido: [
-          {
-            required: true,
-            message: "Ingrese un referido",
-            trigger: "blur"
-          }
-        ],
-        constancia: [
-          {
-            required: true,
-            message: "Ingrese una constancia",
-            trigger: "blur"
-          }
-        ],
-        departamento: [
-          {
-            required: true,
-            message: "Ingrese un departamento",
-            trigger: "blur"
-          }
-        ],
         municipio: [
           {
             required: true,
-            message: "Ingrese un municipio",
+            message: "Ingrese un valor",
             trigger: "blur"
           }
         ],
         aldea: [
           {
             required: true,
-            message: "Ingrese una aldea",
+            message: "Ingrese un valor",
             trigger: "blur"
           }
         ],
-        telefono: [
+        Treferido: [
           {
             required: true,
-            message: "Ingrese un telefono",
+            message: "Ingrese un valor",
+            trigger: "blur"
+          }
+        ],
+        Tatendido: [
+          {
+            required: true,
+            message: "Ingrese un valor",
+            trigger: "blur"
+          }
+        ],
+        mujer: [
+          {
+            required: true,
+            message: "Ingrese un valor",
+            trigger: "blur"
+          }
+        ],
+        hombre: [
+          {
+            required: true,
+            message: "Ingrese un valor",
+            trigger: "blur"
+          }
+        ],
+        ladino: [
+          {
+            required: true,
+            message: "Ingrese un valor",
+            trigger: "blur"
+          }
+        ],
+        maya: [
+          {
+            required: true,
+            message: "Ingrese un valor",
+            trigger: "blur"
+          }
+        ],
+        xinka: [
+          {
+            required: true,
+            message: "Ingrese un valor",
             trigger: "blur"
           }
         ],
         etnia: [
           {
             required: true,
-            message: "Ingrese una etnia",
+            message: "Ingrese un valor",
             trigger: "blur"
           }
         ],
-        fechaval: [
+        gariguna: [
           {
             required: true,
-            message: "Ingrese una fecha",
+            message: "Ingrese un valor",
             trigger: "blur"
           }
         ],
-        fechaing: [
+        mayor: [
           {
             required: true,
-            message: "Ingrese una fecha",
+            message: "Ingrese un valor",
             trigger: "blur"
           }
         ],
-        docente: [
+        menor: [
           {
             required: true,
-            message: "Ingrese un docente",
-            trigger: "blur"
-          }
-        ],
-        etapa: [
-          {
-            required: true,
-            message: "Ingrese una etapa",
-            trigger: "blur"
-          }
-        ],
-        codigoMineduc: [
-          {
-            required: true,
-            message: "Ingrese un codigo",
-            trigger: "blur"
-          }
-        ],
-        jornada: [
-          {
-            required: true,
-            message: "Ingrese una jornada",
-            trigger: "blur"
-          }
-        ],
-        etapafundal: [
-          {
-            required: true,
-            message: "Ingrese una etapa",
-            trigger: "blur"
-          }
-        ],
-        inclusion: [
-          {
-            required: true,
-            message: "Ingrese una inclusion",
-            trigger: "blur"
-          }
-        ],
-        fingreso: [
-          {
-            required: true,
-            message: "Ingrese una fecha",
-            trigger: "blur"
-          }
-        ],
-        motivoegreso: [
-          {
-            required: true,
-            message: "Ingrese un motivo",
-            trigger: "blur"
-          }
-        ],
-        constanciaegreso: [
-          {
-            required: true,
-            message: "Ingrese una constancia",
+            message: "Ingrese un valor",
             trigger: "blur"
           }
         ],
         tipo: [
           {
             required: true,
-            message: "Ingrese un tipo",
+            message: "Ingrese un valor",
             trigger: "blur"
           }
         ],
+       
       },
       search: ""
     };
@@ -454,7 +332,7 @@ export default {
   },
   methods: {
     getPlantillasData: function() {
-      var url = "/getEstudiante";
+      var url = "/getjornada";
       axios.get(url).then(response => {
         this.plantillasall = response.data;
         this.total = response.data.length;
@@ -465,43 +343,34 @@ export default {
       this.$refs[formName].validate(valid => {
         if (valid) {
           this.fullscreenLoading = true;
-          var url = "/addEstudiante";
+          var url = "/addjornada";
           axios
             .post(url, {
             //   ids: this.formInline.id,
-              codigos: this.formInline.codigo,
-              names: this.formInline.name,
-              generos: this.formInline.genero,
-              fechasnac: this.formInline.fechanac,
-              edads: this.formInline.edad,
-              diagnosticos: this.formInline.diagnostico,
-              clasificaciones: this.formInline.clasificacion,
-              referidos: this.formInline.referido,
-              constancias: this.formInline.constancia,
+              tjornadas: this.formInline.tjornada,
+              insti_propos: this.formInline.insti_propo,
               departamentos: this.formInline.departamento,
               municipios: this.formInline.municipio,
               aldeas: this.formInline.aldea,
-              telefonos: this.formInline.telefono,
-              etnias: this.formInline.etnia,
-              fechasval: this.formInline.fechaval,
-              fechasing: this.formInline.fechaing,
-              docentes: this.formInline.docente,
-              etapas: this.formInline.etapa,
-              codigosmineduc: this.formInline.codigoMineduc,
-              jornadas: this.formInline.jornada,
-              etapasfundal: this.formInline.etapafundal,
-              inclusiones: this.formInline.inclusion,
-              fingresos: this.formInline.fingreso,
-              motivoingresos: this.formInline.motivoegreso,
-              constanciaegresos: this.formInline.constanciaegreso,
+              Treferidos: this.formInline.Treferido,
+              Tatendidos: this.formInline.Tatendido,
+              mujers: this.formInline.mujer,
+              hombres: this.formInline.hombre,
+              ladinos: this.formInline.ladino,
+              mayas: this.formInline.maya,
+              xinkas: this.formInline.xinka,
+              garigunas: this.formInline.gariguna,
+              mayors: this.formInline.mayor,
+              menors: this.formInline.menor,
               tipos: this.formInline.tipo,
+             
             })
             .then(response => {
               const status = JSON.parse(response.status);
               if (status == "200") {
                 this.$message({
                   message: h("p", null, [
-                    h("i", { style: "color: teal" }, "Categoria Agregada!")
+                    h("i", { style: "color: teal" }, " Agregado!")
                   ]),
                   type: "success"
                 });
@@ -544,7 +413,7 @@ export default {
       const config = { headers: { "Content-Type": "application/json" } };
       const h = this.$createElement;
       this.fullscreenLoading = true;
-      var url = "/deleteEstudiante";
+      var url = "/deletejornada";
       axios
         .put(
           url,
@@ -584,7 +453,7 @@ export default {
         .then(({ value }) => {
           const config = { headers: { "Content-Type": "application/json" } };
           const h = this.$createElement;
-          var url = "/updateEstudiante";
+          var url = "/updatejornada";
           axios
             .put(
               url,

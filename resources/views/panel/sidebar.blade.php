@@ -13,7 +13,7 @@
         <a class="nav-link" href="estudiante"><i class="icon-calculator"></i> Estudiantes</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="icon-calculator"></i> Jornada</a>
+        <a class="nav-link" href="jornada"><i class="icon-calculator"></i> Jornada</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#"><i class="icon-calculator"></i> Capacitación Padres</a>

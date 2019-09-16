@@ -21,7 +21,14 @@ Route::group(['middleware' => 'cors'], function(){
 		Route::get('estudiante','menuController@showEstudiante');
 		Route::get('getEstudiante','menuController@getEstudiante');
 		Route::post('addEstudiante','menuController@addEstudiante');
-		Route::get('updateEstudiante','menuController@updateEstudiante');
+		Route::put('updateEstudiante','menuController@updateEstudiante');
+		Route::put('deleteEstudiante','menuController@deleteByIdCategory');
+
+		Route::get('jornada','menuController@showJornada');
+		Route::get('getjornada','menuController@getjornada');
+		Route::post('addjornada','menuController@addjornada');
+		Route::put('updatejornada','menuController@updatejornada');
+		Route::put('deletejornada','menuController@deleteByJornada');
 
 
 		// Section CoreUI elements

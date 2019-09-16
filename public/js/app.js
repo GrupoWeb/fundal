@@ -7389,6 +7389,7 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_0_element_ui___default.a, { locale: __WEBPACK_
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 Vue.component('estudiante', __webpack_require__(193));
+Vue.component('jornada', __webpack_require__(201));
 // Vue.component('edicion-component', require('./components/EdicionPlantilla/edicion.vue').default);
 // Vue.component('formulario-component',require('./components/EdicionPlantilla/formularioEdicion.vue').default)
 // Vue.component('asignacion-component',require('./components/EdicionPlantilla/AsignarSede.vue').default);
@@ -76087,10 +76088,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         var status = JSON.parse(response.status);
         if (status == "200") {
           _this3.$message({
-            message: h("p", null, [h("i", { style: "color: teal" }, "Categoria Eliminada!")]),
+            message: h("p", null, [h("i", { style: "color: teal" }, "Dato Eliminado!")]),
             type: "success"
           });
-          _this3.formInline.name = "";
+          // this.formInline.name = "";
           _this3.fullscreenLoading = false;
           _this3.getPlantillasData();
         }
@@ -76765,7 +76766,7 @@ var render = function() {
                               attrs: { size: "mini" },
                               on: {
                                 click: function($event) {
-                                  return _vm.handleEdit(scope.row.id_Categoria)
+                                  return _vm.handleEdit(scope.row.id_lis_estud)
                                 }
                               }
                             },
@@ -76779,7 +76780,7 @@ var render = function() {
                               on: {
                                 click: function($event) {
                                   return _vm.handleDelete(
-                                    scope.row.id_Categoria
+                                    scope.row.id_lis_estud
                                   )
                                 }
                               }
@@ -76825,6 +76826,1041 @@ if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-4a376a9c", module.exports)
+  }
+}
+
+/***/ }),
+/* 201 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(202)
+}
+var normalizeComponent = __webpack_require__(198)
+/* script */
+var __vue_script__ = __webpack_require__(204)
+/* template */
+var __vue_template__ = __webpack_require__(205)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/componentes/menu/jornada.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-f662e63a", Component.options)
+  } else {
+    hotAPI.reload("data-v-f662e63a", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 202 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(203);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(196)("09cf96c2", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-f662e63a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./jornada.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-f662e63a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./jornada.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 203 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(81)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 204 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      plantillasall: [],
+      total: 0,
+      currentPage: 1,
+      pagesize: 10,
+      formInline: {
+        // id: "",
+        tjornada: "",
+        insti_propo: "",
+        departamento: "",
+        municipio: "",
+        aldea: "",
+        Treferido: "",
+        Tatendido: "",
+        mujer: "",
+        hombre: "",
+        ladino: "",
+        maya: "",
+        xinka: "",
+        gariguna: "",
+        mayor: "",
+        menor: "",
+        tipo: ""
+
+      },
+      //   ids: "",
+      tjornadas: "",
+      insti_propos: "",
+      departamentos: "",
+      municipios: "",
+      aldeas: "",
+      Treferidos: "",
+      Tatendidos: "",
+      mujers: "",
+      hombres: "",
+      ladinos: "",
+      mayas: "",
+      xinkas: "",
+      garigunas: "",
+      mayors: "",
+      menors: "",
+      tipos: "",
+      fullscreenLoading: false,
+      loading: false,
+      rules: {
+        tjornada: [{
+          required: true,
+          message: "Ingrese un valor",
+          trigger: "blur"
+        }],
+        // id: [
+        //   {
+        //     required: true,
+        //     message: "Ingrese un id",
+        //     trigger: "blur"
+        //   }
+        // ],
+        insti_propo: [{
+          required: true,
+          message: "Ingrese un valor",
+          trigger: "blur"
+        }],
+        departamento: [{
+          required: true,
+          message: "Ingrese un valor",
+          trigger: "blur"
+        }],
+        // fechanac: [
+        //   {
+        //     required: true,
+        //     message: "Ingrese una fecha",
+        //     trigger: "blur"
+        //   }
+        // ],
+        municipio: [{
+          required: true,
+          message: "Ingrese un valor",
+          trigger: "blur"
+        }],
+        aldea: [{
+          required: true,
+          message: "Ingrese un valor",
+          trigger: "blur"
+        }],
+        Treferido: [{
+          required: true,
+          message: "Ingrese un valor",
+          trigger: "blur"
+        }],
+        Tatendido: [{
+          required: true,
+          message: "Ingrese un valor",
+          trigger: "blur"
+        }],
+        mujer: [{
+          required: true,
+          message: "Ingrese un valor",
+          trigger: "blur"
+        }],
+        hombre: [{
+          required: true,
+          message: "Ingrese un valor",
+          trigger: "blur"
+        }],
+        ladino: [{
+          required: true,
+          message: "Ingrese un valor",
+          trigger: "blur"
+        }],
+        maya: [{
+          required: true,
+          message: "Ingrese un valor",
+          trigger: "blur"
+        }],
+        xinka: [{
+          required: true,
+          message: "Ingrese un valor",
+          trigger: "blur"
+        }],
+        etnia: [{
+          required: true,
+          message: "Ingrese un valor",
+          trigger: "blur"
+        }],
+        gariguna: [{
+          required: true,
+          message: "Ingrese un valor",
+          trigger: "blur"
+        }],
+        mayor: [{
+          required: true,
+          message: "Ingrese un valor",
+          trigger: "blur"
+        }],
+        menor: [{
+          required: true,
+          message: "Ingrese un valor",
+          trigger: "blur"
+        }],
+        tipo: [{
+          required: true,
+          message: "Ingrese un valor",
+          trigger: "blur"
+        }]
+
+      },
+      search: ""
+    };
+  },
+  mounted: function mounted() {
+    this.getPlantillasData();
+  },
+
+  methods: {
+    getPlantillasData: function getPlantillasData() {
+      var _this = this;
+
+      var url = "/getjornada";
+      axios.get(url).then(function (response) {
+        _this.plantillasall = response.data;
+        _this.total = response.data.length;
+      });
+    },
+    onSubmit: function onSubmit(formName) {
+      var _this2 = this;
+
+      var h = this.$createElement;
+      this.$refs[formName].validate(function (valid) {
+        if (valid) {
+          _this2.fullscreenLoading = true;
+          var url = "/addjornada";
+          axios.post(url, {
+            //   ids: this.formInline.id,
+            tjornadas: _this2.formInline.tjornada,
+            insti_propos: _this2.formInline.insti_propo,
+            departamentos: _this2.formInline.departamento,
+            municipios: _this2.formInline.municipio,
+            aldeas: _this2.formInline.aldea,
+            Treferidos: _this2.formInline.Treferido,
+            Tatendidos: _this2.formInline.Tatendido,
+            mujers: _this2.formInline.mujer,
+            hombres: _this2.formInline.hombre,
+            ladinos: _this2.formInline.ladino,
+            mayas: _this2.formInline.maya,
+            xinkas: _this2.formInline.xinka,
+            garigunas: _this2.formInline.gariguna,
+            mayors: _this2.formInline.mayor,
+            menors: _this2.formInline.menor,
+            tipos: _this2.formInline.tipo
+
+          }).then(function (response) {
+            var status = JSON.parse(response.status);
+            if (status == "200") {
+              _this2.$message({
+                message: h("p", null, [h("i", { style: "color: teal" }, " Agregado!")]),
+                type: "success"
+              });
+              _this2.formInline.name = "";
+              _this2.fullscreenLoading = false;
+              _this2.getPlantillasData();
+            }
+          }).catch(function (error) {
+            console.log(error);
+            _this2.$message.error({
+              message: h("p", null, [h("i", { style: "color: red" }, "Error, servidor no encontrado")])
+            });
+            _this2.fullscreenLoading = false;
+          });
+        } else {
+          _this2.$message.error({
+            message: h("p", null, [h("i", { style: "color: red" }, "error")])
+          });
+          return false;
+        }
+      });
+    },
+
+    current_change: function current_change(currentPage) {
+      this.currentPage = currentPage;
+    },
+    handleSizeChange: function handleSizeChange(val) {
+      console.log(val + " items per page");
+    },
+    handleDelete: function handleDelete(row) {
+      var _this3 = this;
+
+      var config = { headers: { "Content-Type": "application/json" } };
+      var h = this.$createElement;
+      this.fullscreenLoading = true;
+      var url = "/deletejornada";
+      axios.put(url, {
+        id: row
+      }, config).then(function (response) {
+        var status = JSON.parse(response.status);
+        if (status == "200") {
+          _this3.$message({
+            message: h("p", null, [h("i", { style: "color: teal" }, "Dato Eliminado!")]),
+            type: "success"
+          });
+          // this.formInline.name = "";
+          _this3.fullscreenLoading = false;
+          _this3.getPlantillasData();
+        }
+      }).catch(function (error) {
+        _this3.$message.error({
+          message: h("p", null, [h("i", { style: "color: red" }, "Error, servidor no encontrado")])
+        });
+        _this3.fullscreenLoading = false;
+      });
+    },
+    handleEdit: function handleEdit(row) {
+      var _this4 = this;
+
+      this.$prompt("Nombre Categoria", "Edición de Categoria", {
+        confirmButtonText: "Actualizar",
+        cancelButtonText: "Cancel"
+      }).then(function (_ref) {
+        var value = _ref.value;
+
+        var config = { headers: { "Content-Type": "application/json" } };
+        var h = _this4.$createElement;
+        var url = "/updatejornada";
+        axios.put(url, {
+          id: row,
+          name: value
+        }, config).then(function (response) {
+          var status = JSON.parse(response.status);
+          if (status == "200") {
+            _this4.$message({
+              message: h("p", null, [h("i", { style: "color: teal" }, "Datos Actualizados!")]),
+              type: "success"
+            });
+            _this4.getPlantillasData();
+          }
+        }).catch(function (error) {
+          _this4.$message.error({
+            message: h("p", null, [h("i", { style: "color: red" }, "Error, servidor no encontrado")])
+          });
+        });
+      }).catch(function () {
+        _this4.$message({
+          type: "info",
+          message: "Proceso Cancelado"
+        });
+      });
+    }
+  }
+});
+
+/***/ }),
+/* 205 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _c("el-card", { staticClass: "box-card" }, [
+        _c(
+          "div",
+          {
+            staticClass: "clearfix",
+            attrs: { slot: "header" },
+            slot: "header"
+          },
+          [_c("span", [_vm._v("Jornada")])]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          [
+            _c(
+              "el-form",
+              {
+                ref: "formInline",
+                staticClass: "demo-form-inline",
+                attrs: {
+                  inline: false,
+                  model: _vm.formInline,
+                  rules: _vm.rules
+                }
+              },
+              [
+                _c(
+                  "el-form-item",
+                  { attrs: { label: "TIPO JORNADA: ", prop: "tipo_jorna" } },
+                  [
+                    _c("el-input", {
+                      model: {
+                        value: _vm.formInline.tjornada,
+                        callback: function($$v) {
+                          _vm.$set(_vm.formInline, "tjornada", $$v)
+                        },
+                        expression: "formInline.tjornada"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "el-form-item",
+                  { attrs: { label: "insti_propo: ", prop: "insti_propo" } },
+                  [
+                    _c("el-input", {
+                      model: {
+                        value: _vm.formInline.insti_propo,
+                        callback: function($$v) {
+                          _vm.$set(_vm.formInline, "insti_propo", $$v)
+                        },
+                        expression: "formInline.insti_propo"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "el-form-item",
+                  { attrs: { label: "DEPARTAMENTO: ", prop: "departamento" } },
+                  [
+                    _c("el-input", {
+                      model: {
+                        value: _vm.formInline.departamento,
+                        callback: function($$v) {
+                          _vm.$set(_vm.formInline, "departamento", $$v)
+                        },
+                        expression: "formInline.departamento"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "el-form-item",
+                  { attrs: { label: "MUNICIPIO: ", prop: "municipio" } },
+                  [
+                    _c("el-input", {
+                      model: {
+                        value: _vm.formInline.municipio,
+                        callback: function($$v) {
+                          _vm.$set(_vm.formInline, "municipio", $$v)
+                        },
+                        expression: "formInline.municipio"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "el-form-item",
+                  { attrs: { label: "ALDEA: ", prop: "aldea" } },
+                  [
+                    _c("el-input", {
+                      model: {
+                        value: _vm.formInline.aldea,
+                        callback: function($$v) {
+                          _vm.$set(_vm.formInline, "aldea", $$v)
+                        },
+                        expression: "formInline.aldea"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "el-form-item",
+                  { attrs: { label: "TOTAL REFERIDO: ", prop: "Treferido" } },
+                  [
+                    _c("el-input", {
+                      model: {
+                        value: _vm.formInline.Treferido,
+                        callback: function($$v) {
+                          _vm.$set(_vm.formInline, "Treferido", $$v)
+                        },
+                        expression: "formInline.Treferido"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "el-form-item",
+                  { attrs: { label: "TOTAL ATENDIDO: ", prop: "Tatendido" } },
+                  [
+                    _c("el-input", {
+                      model: {
+                        value: _vm.formInline.Tatendido,
+                        callback: function($$v) {
+                          _vm.$set(_vm.formInline, "Tatendido", $$v)
+                        },
+                        expression: "formInline.Tatendido"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "el-form-item",
+                  { attrs: { label: "MUJER: ", prop: "mujer" } },
+                  [
+                    _c("el-input", {
+                      model: {
+                        value: _vm.formInline.mujer,
+                        callback: function($$v) {
+                          _vm.$set(_vm.formInline, "mujer", $$v)
+                        },
+                        expression: "formInline.mujer"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "el-form-item",
+                  { attrs: { label: "HOMBRE: ", prop: "hombre" } },
+                  [
+                    _c("el-input", {
+                      model: {
+                        value: _vm.formInline.hombre,
+                        callback: function($$v) {
+                          _vm.$set(_vm.formInline, "hombre", $$v)
+                        },
+                        expression: "formInline.hombre"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "el-form-item",
+                  { attrs: { label: "LADINO: ", prop: "ladino" } },
+                  [
+                    _c("el-input", {
+                      model: {
+                        value: _vm.formInline.ladino,
+                        callback: function($$v) {
+                          _vm.$set(_vm.formInline, "ladino", $$v)
+                        },
+                        expression: "formInline.ladino"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "el-form-item",
+                  { attrs: { label: "MAYA: ", prop: "maya" } },
+                  [
+                    _c("el-input", {
+                      model: {
+                        value: _vm.formInline.maya,
+                        callback: function($$v) {
+                          _vm.$set(_vm.formInline, "maya", $$v)
+                        },
+                        expression: "formInline.maya"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "el-form-item",
+                  { attrs: { label: "XINKA: ", prop: "xinka" } },
+                  [
+                    _c("el-input", {
+                      model: {
+                        value: _vm.formInline.xinka,
+                        callback: function($$v) {
+                          _vm.$set(_vm.formInline, "xinka", $$v)
+                        },
+                        expression: "formInline.xinka"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "el-form-item",
+                  { attrs: { label: "GARIGUNA: ", prop: "gariguna" } },
+                  [
+                    _c("el-input", {
+                      model: {
+                        value: _vm.formInline.gariguna,
+                        callback: function($$v) {
+                          _vm.$set(_vm.formInline, "gariguna", $$v)
+                        },
+                        expression: "formInline.gariguna"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "el-form-item",
+                  { attrs: { label: "MAYOR: ", prop: "mayor" } },
+                  [
+                    _c("el-input", {
+                      model: {
+                        value: _vm.formInline.mayor,
+                        callback: function($$v) {
+                          _vm.$set(_vm.formInline, "mayor", $$v)
+                        },
+                        expression: "formInline.mayor"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "el-form-item",
+                  { attrs: { label: "MENOR: ", prop: "menor" } },
+                  [
+                    _c("el-input", {
+                      model: {
+                        value: _vm.formInline.menor,
+                        callback: function($$v) {
+                          _vm.$set(_vm.formInline, "menor", $$v)
+                        },
+                        expression: "formInline.menor"
+                      }
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "el-form-item",
+                  { attrs: { label: "TIPO: ", prop: "tipo" } },
+                  [
+                    _c(
+                      "el-select",
+                      {
+                        attrs: { placeholder: "Activity zone" },
+                        model: {
+                          value: _vm.formInline.tipo,
+                          callback: function($$v) {
+                            _vm.$set(_vm.formInline, "tipo", $$v)
+                          },
+                          expression: "formInline.tipo"
+                        }
+                      },
+                      [
+                        _c("el-option", {
+                          attrs: {
+                            label: "Distancia GT",
+                            value: "Distancia_GT"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("el-option", {
+                          attrs: {
+                            label: "Distancia HT",
+                            value: "Distancia_HT"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("el-option", {
+                          attrs: {
+                            label: "Distancia QZ",
+                            value: "Distancia_QZ"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("el-option", {
+                          attrs: {
+                            label: "INCLUSION LABORAL",
+                            value: "INCLUSION_LABORAL"
+                          }
+                        }),
+                        _vm._v(" "),
+                        _c("el-option", {
+                          attrs: {
+                            label: "INCLUSION EDUCATIVA",
+                            value: "INCLUSION_EDUCATIVA"
+                          }
+                        })
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "el-form-item",
+                  [
+                    _c(
+                      "el-button",
+                      {
+                        directives: [
+                          {
+                            name: "loading",
+                            rawName: "v-loading.fullscreen.lock",
+                            value: _vm.fullscreenLoading,
+                            expression: "fullscreenLoading",
+                            modifiers: { fullscreen: true, lock: true }
+                          }
+                        ],
+                        staticClass: "btn btn-success",
+                        attrs: { type: "primary" },
+                        on: {
+                          click: function($event) {
+                            return _vm.onSubmit("formInline")
+                          }
+                        }
+                      },
+                      [_vm._v("Guardar")]
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "el-table",
+              {
+                staticStyle: { width: "100%" },
+                attrs: {
+                  data: _vm.plantillasall
+                    .slice(
+                      (_vm.currentPage - 1) * _vm.pagesize,
+                      _vm.currentPage * _vm.pagesize
+                    )
+                    .filter(function(data) {
+                      return (
+                        !_vm.search ||
+                        data.nombre
+                          .toLowerCase()
+                          .includes(_vm.search.toLowerCase())
+                      )
+                    }),
+                  border: ""
+                }
+              },
+              [
+                _c("el-table-column", {
+                  attrs: { prop: "id_jornadas", label: "#", width: "50" }
+                }),
+                _vm._v(" "),
+                _c("el-table-column", {
+                  attrs: { prop: "tipo_jorna", label: "Nombre" }
+                }),
+                _vm._v(" "),
+                _c("el-table-column", {
+                  attrs: { label: "Operaciones", width: "200" },
+                  scopedSlots: _vm._u([
+                    {
+                      key: "header",
+                      fn: function(scope) {
+                        return [
+                          _c("el-input", {
+                            attrs: { size: "mini", placeholder: "Buscar" },
+                            model: {
+                              value: _vm.search,
+                              callback: function($$v) {
+                                _vm.search = $$v
+                              },
+                              expression: "search"
+                            }
+                          })
+                        ]
+                      }
+                    },
+                    {
+                      key: "default",
+                      fn: function(scope) {
+                        return [
+                          _c(
+                            "el-button",
+                            {
+                              attrs: { size: "mini" },
+                              on: {
+                                click: function($event) {
+                                  return _vm.handleEdit(scope.row.id_jornadas)
+                                }
+                              }
+                            },
+                            [_vm._v("Editar")]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "el-button",
+                            {
+                              attrs: { size: "mini", type: "danger" },
+                              on: {
+                                click: function($event) {
+                                  return _vm.handleDelete(scope.row.id_jornadas)
+                                }
+                              }
+                            },
+                            [_vm._v("Eliminar")]
+                          )
+                        ]
+                      }
+                    }
+                  ])
+                })
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticStyle: { "text-align": "left", "margin-top": "30px" } },
+              [
+                _c("el-pagination", {
+                  attrs: {
+                    background: "",
+                    layout: "total,prev, pager, next",
+                    total: _vm.total
+                  },
+                  on: { "current-change": _vm.current_change }
+                })
+              ],
+              1
+            )
+          ],
+          1
+        )
+      ])
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-f662e63a", module.exports)
   }
 }
 

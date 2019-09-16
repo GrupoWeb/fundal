@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\estudiante;
+use App\Models\jornada;
 
 class menuController extends Controller
 {
@@ -11,8 +12,17 @@ class menuController extends Controller
         return view('menu.estudiante');
     }
 
+    public function showJornada(){
+        return view('menu.jornada');
+    }
+
     public function getEstudiante(){
-        $data = estudiante::all();
+        $data = estudiante::select('id_lis_estud','nombre_partida')->where('activo','=','A')->get();
+        return response()->json($data, 200);
+    }
+
+    public function getjornada(){
+        $data = jornada::select('id_jornadas','tipo_jorna')->where('activo','=','A')->get();
         return response()->json($data, 200);
     }
 
@@ -46,8 +56,43 @@ class menuController extends Controller
         $data->motivo_egreso = $request->motivoingresos;
         $data->consta_egreso = $request->constanciaegresos;
         $data->tipo = $request->tipos;
+        $data->activo = 'A';
 
         
        return response()->json($data->save(), 200);
+    }
+    public function addjornada(Request $request){
+        $data = new jornada;
+
+        // $data->id_lis_estud = $request->ids;
+        $data->tipo_jorna = $request->tjornadas;
+        $data->insti_propo = $request->insti_propos;
+        $data->departamento = $request->departamentos;
+        $data->municipio = $request->municipios;
+        $data->aldea = $request->aldeas;
+        $data->total_refe = $request->Treferidos;
+        $data->total_aten = $request->Tatendidos;
+        $data->mujer = $request->mujers;
+        $data->hombre = $request->hombres;
+        $data->ladino = $request->ladinos;
+        $data->maya = $request->mayas;
+        $data->Xinka = $request->xinkas;
+        $data->Garifuna = $request->garigunas;
+        $data->mayor = $request->mayors;
+        $data->menor = $request->menors;
+        $data->tipo = $request->tipos;
+        $data->activo = 'A';
+        
+       return response()->json($data->save(), 200);
+    }
+
+    public function deleteByIdCategory(Request $request){
+        $deleteById = estudiante::where('id_lis_estud', $request->id)->update(['activo' => 'I']);
+        return $deleteById;
+    }
+
+    public function deleteByJornada(Request $request){
+        $deleteById = jornada::where('id_jornadas', $request->id)->update(['activo' => 'I']);
+        return $deleteById;
     }
 }

@@ -178,6 +178,7 @@ Vue.use(ElementUI, { locale });
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 Vue.component('estudiante', require('./componentes/menu/estudiante.vue'));
+Vue.component('jornada', require('./componentes/menu/jornada.vue'));
 // Vue.component('edicion-component', require('./components/EdicionPlantilla/edicion.vue').default);
 // Vue.component('formulario-component',require('./components/EdicionPlantilla/formularioEdicion.vue').default)
 // Vue.component('asignacion-component',require('./components/EdicionPlantilla/AsignarSede.vue').default);
