@@ -45,8 +45,9 @@
   @include('panel.navbar')
   
   <div class="app-body">
-    @include('panel.sidebar')
-    <!-- Main content -->
+    @include('menu.sidebar')
+    {{-- @include('core.sidebar') --}}
+    {{-- <!-- Main content --> --}}
     <main class="main" id="main">
 
       <!-- Breadcrumb -->

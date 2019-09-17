@@ -2,7 +2,7 @@
   <div>
     <el-card class="box-card">
       <div slot="header" class="clearfix">
-        <span>Capacitación Impartidas</span>
+        <span>Capacitación Recibidas</span>
         
       </div>
       <div >
@@ -64,44 +64,16 @@
             <el-input v-model="formInline.aldea"></el-input>
           </el-form-item>
 
-          <el-form-item label="DOCENTE: " prop="docente">
-            <el-input v-model="formInline.docente"></el-input>
+          <el-form-item label="DOCENTE FUNDAL: " prop="docentef">
+            <el-input v-model="formInline.docenteF"></el-input>
           </el-form-item>
 
-          <el-form-item label="CANTIDAD DOCENTES FUNDAL: " prop="docentef">
-            <el-input v-model="formInline.docentef"></el-input>
+          <el-form-item label="CANTIDAD DOCENTES: " prop="cantidadD">
+            <el-input v-model="formInline.cantidadD"></el-input>
           </el-form-item>
 
-          <el-form-item label="PROFESIONAL DISCIPLINA: " prop="pdisciplina">
-            <el-input v-model="formInline.pdisciplina"></el-input>
-          </el-form-item>
-
-          <el-form-item label="CANTIDAD PROFESIONALES: " prop="cprofesional">
-            <el-input v-model="formInline.cprofesional"></el-input>
-          </el-form-item>
-
-          <el-form-item label="PRACTICANTES: " prop="practicantes">
-            <el-input v-model="formInline.practicantes"></el-input>
-          </el-form-item>
-
-          <el-form-item label="CANTIDAD PRACTICANTES: " prop="cpracticantes">
-            <el-input v-model="formInline.cpracticantes"></el-input>
-          </el-form-item>
-
-          <el-form-item label="ESTUDIANTES: " prop="estudiantes">
-            <el-input v-model="formInline.estudiantes"></el-input>
-          </el-form-item>
-
-          <el-form-item label="CANTIDAD ESTUDIANTES: " prop="cestudiantes">
-            <el-input v-model="formInline.cestudiantes"></el-input>
-          </el-form-item>
-
-          <el-form-item label="CANTIDAD DOCENTES: " prop="cdocentes">
-            <el-input v-model="formInline.cdocentes"></el-input>
-          </el-form-item>
-
-          <el-form-item label="TOTAL CANTIDAD: " prop="totalC">
-            <el-input v-model="formInline.totalC"></el-input>
+          <el-form-item label="TOTAL CANTIDAD: " prop="tcantidad">
+            <el-input v-model="formInline.tcantidad"></el-input>
           </el-form-item>
 
           <el-form-item label="HOMBRES: " prop="hombres">
@@ -122,18 +94,6 @@
                 </el-date-picker> -->
           </el-form-item>
 
-          <el-form-item label="TOTAL NUEVOS: " prop="tnuevos">
-            <el-input v-model="formInline.tnuevos"></el-input>
-          </el-form-item>
-
-          <el-form-item label="TOTAL HOMBRES: " prop="thombres">
-            <el-input v-model="formInline.thombres"></el-input>
-          </el-form-item>
-
-          <el-form-item label="TOTAL MUJERES: " prop="tmujeres">
-            <el-input v-model="formInline.tmujeres"></el-input>
-          </el-form-item>
-
           <el-form-item label="GRUPO ETNICO: " prop="grupoE">
             <el-input v-model="formInline.grupoE"></el-input>
           </el-form-item>
@@ -142,17 +102,16 @@
             <el-input v-model="formInline.estudianteD"></el-input>
           </el-form-item>
 
-          <el-form-item label="ESTUDIANTES INDIRECTOS CON DISCAPACIDADES: " prop="estudianteIC">
-            <el-input v-model="formInline.estudianteIC"></el-input>
+          <el-form-item label="ESTUDIANTES INDIRECTOS CON DISCAPACIDAD: " prop="estudianteID">
+            <el-input v-model="formInline.estudianteID"></el-input>
           </el-form-item>
 
-          <el-form-item label="ESTUDIANTES INDIRECTOS SIN DISCAPACIDADES: " prop="estudianteSC">
-            <el-input v-model="formInline.estudianteSC"></el-input>
+          <el-form-item label="ESTUDIANTES INDIRECTOS SIN DISCAPACIDAD: " prop="estudianteISD">
+            <el-input v-model="formInline.estudianteISD"></el-input>
           </el-form-item>
 
-
-          <el-form-item label="NOMBRE FACILITADOR: " prop="nombreFa">
-            <el-input v-model="formInline.nombreFa"></el-input>
+          <el-form-item label="NBR_FCLTDR: " prop="nbrfcltdr">
+            <el-input v-model="formInline.nbrfcltdr"></el-input>
           </el-form-item>
 
           <el-form-item label="TIPO ACTIVIDAD: " prop="tipoAc">
@@ -169,6 +128,8 @@
             </el-select>
           </el-form-item>
 
+
+
           <el-form-item>
             <el-button
               @click="onSubmit('formInline')"
@@ -184,12 +145,12 @@
       style="width: 100%"
       border
     >
-      <el-table-column prop="id_cap_impar" label="#" width="50"></el-table-column>
+      <el-table-column prop="id_cap_recibidas" label="#" width="50"></el-table-column>
       <el-table-column prop="tema" label="Nombre"></el-table-column>
-      <el-table-column label="Operaciones" width="200">
+      <el-table-column label="Operaciones" width="300">
         <template slot="header" slot-scope="scope">
           <el-input v-model="search" size="mini" placeholder="Buscar" />
-          <el-link :underline=true v-bind:href="'/PrinterImpartidas'">
+          <el-link :underline=true v-bind:href="'/PrinterRecibidas'">
             <el-button
               size="mini"
               type="warning"
@@ -200,12 +161,13 @@
           </el-link>
         </template>
         <template slot-scope="scope">
-          <el-button size="mini" @click="handleEdit(scope.row.id_cap_impar)">Editar</el-button>
+          <el-button size="mini" @click="handleEdit(scope.row.id_cap_recibidas)">Editar</el-button>
           <el-button
             size="mini"
             type="danger"
-            @click="handleDelete(scope.row.id_cap_impar)"
+            @click="handleDelete(scope.row.id_cap_recibidas)"
           >Eliminar</el-button>
+          
         </template>
       </el-table-column>
     </el-table>
@@ -241,62 +203,41 @@ export default {
         departamento:"",
         municipio:"",
         aldea:"",
-        docente:"",
-        docentef:"",
-        pdisciplina:"",
-        cprofesional:"",
-        practicantes:"",
-        cpracticantes:"",
-        estudiantes:"",
-        cestudiantes:"",
-        cdocentes:"",
-        totalC:"",
+        docenteF:"",
+        cantidadD:"",
+        tcantidad:"",
         hombres:"",
         mujeres:"",
-        tnuevos:"",
-        thombres:"",
-        tmujeres:"",
         grupoE:"",
         estudianteD:"",
-        estudianteIC:"",
-        estudianteSC:"",
-        nombreFa:"",
+        estudianteID:"",
+        estudianteISD:"",
+        nbrfcltdr:"",
         tipoAc:"",
-        tipo:"",
-
+        tipo:""
       },
     //   ids: "",
-        fechas:"",
-        temas:"",
-        logrosRs:"",
-        tiempos:"",
-        institucionRs:"",
-        paiss:"",
-        departamentos:"",
-        municipios:"",
-        aldeas:"",
-        docentes:"",
-        docentefs:"",
-        pdisciplinas:"",
-        cprofesionals:"",
-        practicantess:"",
-        cpracticantess:"",
-        estudiantess:"",
-        cestudiantess:"",
-        cdocentess:"",
-        totalCs:"",
-        hombress:"",
-        mujeress:"",
-        tnuevoss:"",
-        thombress:"",
-        tmujeress:"",
-        grupoEs:"",
-        estudianteDs:"",
-        estudianteICs:"",
-        estudianteSCs:"",
-        nombreFas:"",
-        tipoAcs:"",
-        tipos:"",
+        fechaa:"",
+        temaa:"",
+        logrosRa:"",
+        tiempoa:"",
+        institucionRa:"",
+        paisa:"",
+        departamentoa:"",
+        municipioa:"",
+        aldeaa:"",
+        docenteFa:"",
+        cantidadDa:"",
+        tcantidada:"",
+        hombresa:"",
+        mujeresa:"",
+        grupoEa:"",
+        estudianteDa:"",
+        estudianteIDa:"",
+        estudianteISDa:"",
+        nbrfcltdra:"",
+        tipoAca:"",
+        tipoa:"",
       fullscreenLoading: false,
       loading: false,
       rules: {
@@ -484,7 +425,7 @@ export default {
   },
   methods: {
     getPlantillasData: function() {
-      var url = "/getInfo";
+      var url = "/getRecibida";
       axios.get(url).then(response => {
         this.plantillasall = response.data;
         this.total = response.data.length;
@@ -495,43 +436,32 @@ export default {
       this.$refs[formName].validate(valid => {
         if (valid) {
           this.fullscreenLoading = true;
-          var url = "/addImpartidas";
+          var url = "/addRecibida";
           axios
             .post(url, {
             //   ids: this.formInline.id,
-              fechas: this.formInline.fecha,
-              temas: this.formInline.tema,
-              logrosRs: this.formInline.logrosR,
-              tiempos: this.formInline.tiempo,
-              institucionRs: this.formInline.institucionR,
-              paiss: this.formInline.pais,
-              departamentos: this.formInline.departamento,
-              municipios: this.formInline.municipio,
-              aldeas: this.formInline.aldea,
-              docentes: this.formInline.docente,
-              docentefs: this.formInline.docentef,
-              pdisciplinas: this.formInline.pdisciplina,
-              cprofesionals: this.formInline.cprofesional,
-              practicantess: this.formInline.practicantes,
-              cpracticantess: this.formInline.cpracticantes,
-              estudiantess: this.formInline.estudiantes,
-              cestudiantess: this.formInline.cestudiantes,
-              cdocentess: this.formInline.cdocentes,
-              totalCs: this.formInline.totalC,
-              hombress: this.formInline.hombres,
-              mujeress: this.formInline.mujeres,
-              tnuevoss: this.formInline.tnuevos,
-              thombress: this.formInline.thombres,
-              tmujeress: this.formInline.tmujeres,
-              grupoEs: this.formInline.grupoE,
-              estudianteDs: this.formInline.estudianteD,
-              estudianteICs: this.formInline.estudianteIC,
-              estudianteSCs: this.formInline.estudianteSC,
-              nombreFas: this.formInline.nombreFa,
-              tipoAcs: this.formInline.tipoAc,
-              tipos: this.formInline.tipo,
+              fechaa: this.formInline.fecha,
+              temaa: this.formInline.tema,
+              logrosRa: this.formInline.logrosR,
+              tiempoa: this.formInline.tiempo,
+              institucionRa: this.formInline.institucionR,
+              paisa: this.formInline.pais,
+              departamentoa: this.formInline.departamento,
+              municipioa: this.formInline.municipio,
+              aldeaa: this.formInline.aldea,
+              docenteFa: this.formInline.docenteF,
+              cantidadDa: this.formInline.cantidadD,
+              tcantidada: this.formInline.tcantidad,
+              hombresa: this.formInline.hombres,
+              mujeresa: this.formInline.mujeres,
+              grupoEa: this.formInline.grupoE,
+              estudianteDa: this.formInline.estudianteD,
+              estudianteIDa: this.formInline.estudianteID,
+              estudianteISDa: this.formInline.estudianteISD,
+              nbrfcltdra: this.formInline.nbrfcltdr,
+              tipoAca: this.formInline.tipoAc,
+              tipoa: this.formInline.tipo,
 
-             
             })
             .then(response => {
               const status = JSON.parse(response.status);
@@ -581,7 +511,7 @@ export default {
       const config = { headers: { "Content-Type": "application/json" } };
       const h = this.$createElement;
       this.fullscreenLoading = true;
-      var url = "/deleteImpartidas";
+      var url = "/deleteRecibida";
       axios
         .put(
           url,
@@ -613,6 +543,42 @@ export default {
           this.fullscreenLoading = false;
         });
     },
+    // handlePDF(row) {
+    //   const config = { headers: { "Content-Type": "application/json" } };
+    //   const h = this.$createElement;
+    //   this.fullscreenLoading = true;
+    //   var url = "/PrinterRecibidas";
+    //   axios
+    //     .post(
+    //       url,
+    //       {
+    //         id: row
+    //       },
+    //       config
+    //     )
+    //     .then(response => {
+    //       const status = JSON.parse(response.status);
+    //       if (status == "200") {
+    //         this.$message({
+    //           message: h("p", null, [
+    //             h("i", { style: "color: teal" }, "Dato Eliminado!")
+    //           ]),
+    //           type: "success"
+    //         });
+    //         // this.formInline.name = "";
+    //         this.fullscreenLoading = false;
+    //         this.getPlantillasData();
+    //       }
+    //     })
+    //     .catch(error => {
+    //       this.$message.error({
+    //         message: h("p", null, [
+    //           h("i", { style: "color: red" }, "Error, servidor no encontrado")
+    //         ])
+    //       });
+    //       this.fullscreenLoading = false;
+    //     });
+    // },
     handleEdit(row) {
       this.$prompt("Nombre Categoria", "Edición de Categoria", {
         confirmButtonText: "Actualizar",

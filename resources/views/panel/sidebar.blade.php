@@ -18,6 +18,9 @@
       <li class="nav-item">
         <a class="nav-link" href="Cpadres"><i class="icon-calculator"></i> Capacitación Padress</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Cpadres"><i class="icon-calculator"></i> Capacitación Padress</a>
+      </li>
       {{-- <li class="nav-item">
         <a class="nav-link" href="impartidas"><i class="icon-calculator"></i> Impartida</a>
       </li>

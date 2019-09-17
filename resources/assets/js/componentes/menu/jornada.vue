@@ -2,7 +2,7 @@
   <div>
     <el-card class="box-card">
       <div slot="header" class="clearfix">
-        <span>Jornada</span>
+        <span>Jornadas</span>
         
       </div>
       <div >
@@ -117,6 +117,15 @@
       <el-table-column label="Operaciones" width="200">
         <template slot="header" slot-scope="scope">
           <el-input v-model="search" size="mini" placeholder="Buscar" />
+          <el-link :underline=true v-bind:href="'/PrinterJornadas'">
+            <el-button
+              size="mini"
+              type="warning"
+              icon="el-icon-printer"
+              plain
+              >Imprimir 
+            </el-button>
+          </el-link>
         </template>
         <template slot-scope="scope">
           <el-button size="mini" @click="handleEdit(scope.row.id_jornadas)">Editar</el-button>

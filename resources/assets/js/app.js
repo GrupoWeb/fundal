@@ -181,6 +181,7 @@ Vue.component('estudiante', require('./componentes/menu/estudiante.vue'));
 Vue.component('jornada', require('./componentes/menu/jornada.vue'));
 Vue.component('padres', require('./componentes/menu/padres.vue'));
 Vue.component('impartidas', require('./componentes/menu/impartidas.vue'));
+Vue.component('recibidas', require('./componentes/menu/recibida.vue'));
 // Vue.component('edicion-component', require('./components/EdicionPlantilla/edicion.vue').default);
 // Vue.component('formulario-component',require('./components/EdicionPlantilla/formularioEdicion.vue').default)
 // Vue.component('asignacion-component',require('./components/EdicionPlantilla/AsignarSede.vue').default);

@@ -37,10 +37,23 @@ Route::group(['middleware' => 'cors'], function(){
 		Route::put('deletePadres','menuController@deleteByPadres');
 
 		Route::get('impartidas','menuController@showimpartidas');
-		Route::get('getPadres','menuController@getPadres');
-		Route::post('addPadres','menuController@addPadres');
-		Route::put('updatePadres','menuController@updatePadres');
-		Route::put('deletePadres','menuController@deleteByPadres');
+		Route::get('getInfo','menuController@getDataImpartidas');
+		Route::post('addImpartidas','menuController@addImpartidas');
+		Route::put('updateImpartidas','menuController@updateImpartidas');
+		Route::put('deleteImpartidas','menuController@deleteByImpartidas');
+
+
+		Route::get('recibida','menuController@showRecibida');
+		Route::get('getRecibida','menuController@getRecibida');
+		Route::post('addRecibida','menuController@addRecibida');
+		Route::put('updateRecibida','menuController@updateRecibida');
+		Route::put('deleteRecibida','menuController@deleteByRecibida');
+
+		Route::get('PrinterRecibidas','menuController@showprinterRecibidas');
+		Route::get('PrinterEstudiantes','menuController@showprinterEstudiantes');
+		Route::get('PrinterImpartidas','menuController@showprinterImpartidas');
+		Route::get('PrinterJornadas','menuController@showprinterJornadas');
+		Route::get('PrinterPadres','menuController@showprinterPadres');
 
 
 		// Section CoreUI elements

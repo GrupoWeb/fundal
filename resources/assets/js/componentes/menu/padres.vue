@@ -153,6 +153,15 @@
       <el-table-column label="Operaciones" width="200">
         <template slot="header" slot-scope="scope">
           <el-input v-model="search" size="mini" placeholder="Buscar" />
+          <el-link :underline=true v-bind:href="'/PrinterPadres'">
+            <el-button
+              size="mini"
+              type="warning"
+              icon="el-icon-printer"
+              plain
+              >Imprimir 
+            </el-button>
+          </el-link>
         </template>
         <template slot-scope="scope">
           <el-button size="mini" @click="handleEdit(scope.row.id_cap_padres)">Editar</el-button>
